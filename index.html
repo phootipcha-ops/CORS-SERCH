@@ -197,7 +197,7 @@ details[open] summary{margin-bottom:10px}
           <p class="small muted" style="flex:1 1 150px;margin:0">เส้น baseline ที่ยาวเกินระยะนี้จะไม่ลาก และไม่นับเป็นสามเหลี่ยมสำหรับค้นหา</p>
         </div>
         <div class="checks">
-          <label><input type="checkbox" id="ly-own" checked><svg class="sw" width="18" height="18" viewBox="-9 -9 18 18"><circle r="6" fill="var(--mute)"/></svg>สถานีของเรา</label>
+          <label><input type="checkbox" id="ly-own" checked><svg class="sw" width="18" height="18" viewBox="-9 -9 18 18"><circle r="6" fill="var(--mute)"/></svg></label>
           <label><input type="checkbox" id="ly-ext" checked><svg class="sw" width="18" height="18" viewBox="-9 -9 18 18"><path d="M0-8L8 0 0 8-8 0Z" fill="var(--mute)"/></svg>สถานีหน่วยงานภายนอก</label>
           <label><input type="checkbox" id="ly-temp" checked><svg class="sw" width="18" height="18" viewBox="-9 -9 18 18"><rect x="-5.5" y="-5.5" width="11" height="11" rx="1.5" fill="var(--mute)"/></svg>Temp base</label>
           <label><input type="checkbox" id="ly-lines" checked><svg class="sw" width="18" height="18" viewBox="0 0 18 18"><path d="M1 15L17 3" stroke="var(--accent)" stroke-width="1.5" fill="none"/></svg>เส้น baseline <span class="stat muted" id="nlines"></span></label>
@@ -260,7 +260,7 @@ function toCSV(rows){return [HEADER].concat(rows.map(function(r){return r.map(cs
 var DEFAULT_CSV=toCSV(DATA);
 
 var PAL=["#6a4fd8","#2f6fe0","#0d9bc9","#12a07a","#68ad2a","#c9a400","#ec8219","#e2473b","#c23a8e","#8c5b45"];
-var TYPE_LABEL={own:"สถานีของเรา",ext:"สถานีหน่วยงานภายนอก",temp:"Temp base"};
+var TYPE_LABEL={own:"",ext:"สถานีหน่วยงานภายนอก",temp:"Temp base"};
 
 var pts=[],Q=null,hidden={},selId=null;
 var svg=$("#map"),gPts=$("#gPts"),gQ=$("#gQ"),gLbl=$("#gLbl"),gPL=$("#gPL"),gTL=$("#gTL");
